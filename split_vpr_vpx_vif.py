@@ -2,14 +2,14 @@ from Bio import SeqIO
 
 vpr = []
 vpx = []
-vif = []
 
-for record in SeqIO.parse("vpR_vpx/protein-matching-IPR000012.fasta", "fasta"):
-    if (str(record.description).split(" ")[1][:3]) == 'Vpr':
+
+for record in SeqIO.parse("unreviewed/protein-matching-IPR000012.fasta", "fasta"):
+    if "Vpr"  in str(record.description):
         vpr.append(record)
-
-    elif (str(record.description).split(" ")[1][:3]) == 'Vpx':
+    elif "Vpx" in str(record.description):
         vpx.append(record)
+
 
 
 with open('vpr.fasta', 'w') as f:
