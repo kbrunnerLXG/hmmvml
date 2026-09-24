@@ -215,7 +215,7 @@ Possible extensions:
 
 ## Author
 
-Aditya
+Ari
 
 GitHub:
 [https://github.com/kbrunnerLXG](https://github.com/kbrunnerLXG)
